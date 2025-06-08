@@ -2,26 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BGgenie - Background Changer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGgenie - Magic Background Changer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
-    <h1>BGgenie</h1>
-    <p>Upload your image to remove or change the background</p>
-    <input type="file" id="upload" accept="image/*" />
+    <img src="assets/logo.png" alt="BGgenie Logo" class="logo"/>
+    <h1>BG<span class="highlight">genie</span></h1>
+    <p class="tagline">Magically remove & replace backgrounds in seconds</p>
+
+    <input type="file" id="upload" accept="image/*"/>
     <div id="preview-container">
-      <img id="preview" />
+      <img id="preview"/>
     </div>
+
     <div class="buttons">
-      <button onclick="removeBackground()">Remove Background</button>
+      <button onclick="removeBackground()">✨ Remove Background</button>
       <button onclick="changeBackground('white')">White BG</button>
       <button onclick="changeBackground('beach')">Beach BG</button>
+      <button onclick="changeBackground('gradient')">Gradient BG</button>
+      <button onclick="changeBackground('transparent')">Transparent</button>
     </div>
-    <a id="download-link" style="display:none;" download="bggenie.png">Download Image</a>
+
+    <a id="download-link" style="display:none;" download="bggenie.png">Download</a>
   </div>
-  <footer>Made with ❤️ | <span class="watermark">BGgenie</span></footer>
+
+  <footer>
+    <p>Made with ❤️ by <span class="watermark">BGgenie</span></p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
