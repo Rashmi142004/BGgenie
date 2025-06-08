@@ -1,1 +1,27 @@
-<!DOCTYPE html><html><head><title>BGgenie</title></head><body><h1>Welcome to BGgenie</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BGgenie - Background Changer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BGgenie</h1>
+    <p>Upload your image to remove or change the background</p>
+    <input type="file" id="upload" accept="image/*" />
+    <div id="preview-container">
+      <img id="preview" />
+    </div>
+    <div class="buttons">
+      <button onclick="removeBackground()">Remove Background</button>
+      <button onclick="changeBackground('white')">White BG</button>
+      <button onclick="changeBackground('beach')">Beach BG</button>
+    </div>
+    <a id="download-link" style="display:none;" download="bggenie.png">Download Image</a>
+  </div>
+  <footer>Made with ❤️ | <span class="watermark">BGgenie</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
