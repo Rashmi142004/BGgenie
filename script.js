@@ -14,7 +14,7 @@ fileInput.onchange = function () {
 };
 
 function removeBackground() {
-  alert("Background removal feature will be integrated with an API.");
+  alert("Background removal feature will be integrated soon with real API.");
 }
 
 function changeBackground(type) {
