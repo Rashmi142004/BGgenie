@@ -1,37 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BGgenie - Magic Background Changer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create stunning images in seconds with BGgenie — your personal background wizard.">
+  <title>BGgenie - Background Remover</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <img src="assets/logo.png" alt="BGgenie Logo" class="logo"/>
-    <h1>BG<span class="highlight">genie</span></h1>
-    <p class="tagline">Magically remove & replace backgrounds in seconds</p>
-
-    <input type="file" id="upload" accept="image/*"/>
-    <div id="preview-container">
-      <img id="preview"/>
-    </div>
-
-    <div class="buttons">
-      <button onclick="removeBackground()">✨ Remove Background</button>
-      <button onclick="changeBackground('white')">White BG</button>
-      <button onclick="changeBackground('beach')">Beach BG</button>
-      <button onclick="changeBackground('gradient')">Gradient BG</button>
-      <button onclick="changeBackground('transparent')">Transparent</button>
-    </div>
-
-    <a id="download-link" style="display:none;" download="bggenie.png">Download</a>
-  </div>
-
+  <header>
+    <img src="logo.png" alt="BGgenie Logo" id="logo">
+    <h1>BGgenie</h1>
+    <p>Create stunning images in seconds with BGgenie — your personal background wizard.</p>
+  </header>
+  <main>
+    <h2>Upload Image</h2>
+    <input type="file" id="imageInput">
+    <button id="removeBgBtn">Remove Background</button>
+  </main>
   <footer>
-    <p>Made with ❤️ by <span class="watermark">BGgenie</span></p>
+    <p>© 2025 BGgenie. All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
