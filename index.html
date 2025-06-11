@@ -1,1 +1,67 @@
-<!DOCTYPE html><html><head><title>BGgenie</title></head><body><h1>BGgenie Preview</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BGgenie - AI Background Remover</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #2e005e, #8e44ad);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        header img {
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: gold;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .upload-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: 2rem auto;
+            color: #000;
+        }
+        input[type="file"] {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="BGgenie Logo">
+    </header>
+    <h1>BGgenie</h1>
+    <p>Create stunning images by removing and changing backgrounds in seconds!</p>
+    <div class="upload-box">
+        <form action="https://api.remove.bg/v1.0/removebg" method="post" enctype="multipart/form-data">
+            <input type="file" name="image_file" accept="image/*" required><br>
+            <input type="hidden" name="size" value="auto">
+            <button type="submit">Remove Background</button>
+        </form>
+        <p>Upload an image to remove the background using real AI.</p>
+    </div>
+    <footer>
+        &copy; 2025 BGgenie. All rights reserved.
+    </footer>
+</body>
+</html>
