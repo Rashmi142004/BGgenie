@@ -2,38 +2,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BGgenie - Background Remover</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGgenie - Background Changer</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f7f4ff; color: #333; }
+    header, footer { background: #6a0dad; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .container { padding: 20px; }
+    .gallery img { width: 45%; margin: 10px; border-radius: 10px; }
+    .section { margin: 40px 0; }
+    h2 { color: #6a0dad; }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="BGgenie Logo" class="logo" />
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Tools</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Transform Your Images in Seconds with BGgenie</h1>
-        <p>Remove or change image backgrounds with AI magic. Try it now!</p>
-        <input type="file" id="upload" />
-        <div class="buttons">
-            <button onclick="removeBackground()">Remove Background</button>
-            <button onclick="changeBg('transparent')">Transparent</button>
-            <button onclick="changeBg('white')">White</button>
-            <button onclick="changeBg('gold')">Gold</button>
-            <button onclick="uploadCustomBg()">Custom Image</button>
-        </div>
-        <div id="image-preview"></div>
-        <p class="credit">Made with ❤️ by Rashmi</p>
-    </main>
-    <footer>
-        <p>Visitor Count: <span id="visitor-count">Loading...</span></p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <h1>BGgenie</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section id="home" class="section">
+      <h2>Welcome to BGgenie</h2>
+      <p>Create stunning images by removing or changing backgrounds instantly with AI. Choose from transparent, solid colors, or our curated background gallery!</p>
+    </section>
+    <section id="about" class="section">
+      <h2>About BGgenie</h2>
+      <p>BGgenie is your all-in-one tool for background removal and transformation. Whether you're a creator, marketer, or student — our easy-to-use platform helps you generate professional-quality visuals in seconds.</p>
+    </section>
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="/gallery/sample1-before.jpg" alt="Before">
+        <img src="/gallery/sample1-after.jpg" alt="After">
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Email: bggenie.support@gmail.com</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 BGgenie. All rights reserved.
+  </footer>
 </body>
 </html>
