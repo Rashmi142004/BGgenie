@@ -1,0 +1,1 @@
+// Visitor counter integration placeholder
