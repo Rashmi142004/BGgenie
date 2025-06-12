@@ -1,1 +1,0 @@
-// Real AI background removal logic placeholder
